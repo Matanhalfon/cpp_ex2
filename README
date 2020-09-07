@@ -1,0 +1,33 @@
+cpp_ex2
+matan.halfon
+205680648
+########
+class:
+Fractal:
+    an father fractal that represent an fractal
+    i chosed to make it a  pure virtual class because there is no use in a abstract Fractal
+    also the ctor of the Class is protected so only the children will be allowed to access/
+    the class is implementing: the pure vir method drewF that prints out the fractal accordingly to the
+    Fractal shape and look , i choosed not to implement it an abstract way so we will be able to add
+    more Fractal in the future, and also pure virtual class.
+    this class also holds an virtual Dtor  for all of the classes
+    the methode Is marked is a bool method that return True if we need to print # in a current index or ' 'otherwise
+    it is implemented with in the Fractal class due to the fact that the implantation for the two first fractals (Ss,SCarpet)
+    was the same with one change in the size factor. the CantorD class will override it .
+Ss:
+    a Fractal that inherits form Fractal implement it own drewF and rule of 5 operators will use
+    the same  isMarked method with size factor of 2
+SCarpet:
+    a Fractal that inherits form Fractal implement it own drewF and rule of 5 operators will use
+      the same  isMarked method with size factor of 3
+CantorD:
+    a Fractal that inherits form Fractal implement it own drewF and rule of 5 operators will use
+    the same  different drew F method becouse it have a different inside logic and the lack to add more
+    unnecessary parameters to the function
+
+FractalDrawer:
+    a cpp with a main that read the file using the fsteam and create the needed Fractals and push them into a
+    stl stack , while reading the file we Exit and print an Invalid mess if the lines are on illegal format
+    also will print ,mess if there is an memory error or fstream exp or any anther.
+    after it will create the needed Fractals , the program will pop the Fractals from the stack and prints them
+    out to consol according to each Fractal drewF method that take care of the Fractal shape and dim as needed.

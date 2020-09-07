@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/matan/Desktop/School/c++/ex2/Fractal.h
+
+/cygdrive/c/Users/matan/Desktop/School/c++/ex2/FractalDrawer.cpp
+iostream
+-
+Fractal.h
+/cygdrive/c/Users/matan/Desktop/School/c++/ex2/Fractal.h
+stack
+-
+fstream
+-
+sstream
+-
+
